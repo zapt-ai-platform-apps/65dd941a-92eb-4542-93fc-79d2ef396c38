@@ -43,19 +43,19 @@ function App() {
   };
 
   return (
-    <div class="min-h-screen bg-gray-100 p-4">
+    <div class="min-h-screen bg-gradient-to-br from-primary to-secondary p-4">
       <div class="max-w-4xl mx-auto h-full">
-        <h1 class="text-2xl font-bold mb-4 text-blue-600">Banking App</h1>
+        <h1 class="text-4xl font-bold mb-6 text-white text-center">Banking App</h1>
         <AccountSummary account={account} />
-        <div class="flex space-x-4 my-4">
+        <div class="flex flex-col sm:flex-row sm:justify-center space-y-4 sm:space-y-0 sm:space-x-4 my-6">
           <button
-            class="bg-blue-500 text-white py-2 px-4 rounded cursor-pointer"
+            class="bg-white/30 text-white py-2 px-6 rounded-full cursor-pointer hover:bg-white/50 transition duration-300 ease-in-out transform hover:scale-105"
             onClick={() => setShowAddPayee(true)}
           >
             Add Payee
           </button>
           <button
-            class="bg-green-500 text-white py-2 px-4 rounded cursor-pointer"
+            class="bg-white/30 text-white py-2 px-6 rounded-full cursor-pointer hover:bg-white/50 transition duration-300 ease-in-out transform hover:scale-105"
             onClick={() => setShowPayPayee(true)}
           >
             Pay a Payee
@@ -76,7 +76,7 @@ function App() {
           />
         )}
         <div class="mt-8 text-center">
-          <a href="https://www.zapt.ai" target="_blank" rel="noopener noreferrer" class="text-sm text-gray-500 hover:text-gray-700">
+          <a href="https://www.zapt.ai" target="_blank" rel="noopener noreferrer" class="text-sm text-white hover:text-gray-300">
             Made on ZAPT
           </a>
         </div>
