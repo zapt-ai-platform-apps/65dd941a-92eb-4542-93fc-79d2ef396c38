@@ -20,6 +20,18 @@ Sentry.init({
 // Inject Vercel Analytics
 inject();
 
+// Enable dark mode
+document.documentElement.classList.add('dark');
+
+// Add Umami Analytics
+if (!window.location.hostname.includes('vercel.app')) {
+  const script = document.createElement('script');
+  script.defer = true;
+  script.src = 'https://cloud.umami.is/script.js';
+  script.setAttribute('data-website-id', import.meta.env.VITE_PUBLIC_UMAMI_WEBSITE_ID);
+  document.head.appendChild(script);
+}
+
 // Add PWA support
 window.progressierAppRuntimeSettings = {
   uid: import.meta.env.VITE_PUBLIC_APP_ID,

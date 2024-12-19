@@ -2,7 +2,7 @@ import { For } from 'solid-js';
 
 function TransactionList(props) {
   return (
-    <div class="bg-white/20 p-6 rounded-3xl shadow-xl backdrop-blur-md mt-6 overflow-x-auto">
+    <div class="bg-white/20 dark:bg-gray-800 p-6 rounded-3xl shadow-xl backdrop-blur-md mt-6 overflow-x-auto">
       <h2 class="text-2xl font-semibold mb-4 text-white">Recent Transactions</h2>
       <table class="min-w-full">
         <thead>

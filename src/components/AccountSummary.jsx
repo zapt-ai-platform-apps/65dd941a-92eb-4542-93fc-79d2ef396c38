@@ -9,7 +9,7 @@ function AccountSummary(props) {
   );
 
   return (
-    <div class="bg-white/20 p-6 rounded-3xl shadow-xl backdrop-blur-md">
+    <div class="bg-white/20 dark:bg-gray-800 p-6 rounded-3xl shadow-xl backdrop-blur-md">
       <h2 class="text-2xl font-semibold mb-4 text-white">Account Summary</h2>
       <p class="text-white mb-2">
         <strong>Account Number:</strong> {props.account().accountNumber}
