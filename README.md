@@ -5,7 +5,7 @@ Banking App is a simulated banking application that provides users with an inter
 ## User Journeys
 
 1. [View Account Summary](docs/journeys/view-account-summary.md) - Check your account details and balance.
-2. [View Card Details](docs/journeys/view-card-details.md) - Access your card number, expiry date, and CVC.
+2. [View Card Details](docs/journeys/view-card-details.md) - Securely view your card number, expiry date, and CVC when needed.
 3. [View Recent Transactions](docs/journeys/view-recent-transactions.md) - Browse your recent transactions.
 4. [Add a Payee](docs/journeys/add-payee.md) - Add a new payee to your account.
 5. [Pay a Payee](docs/journeys/pay-payee.md) - Make a payment to an existing payee.
