@@ -1,4 +1,7 @@
-import { createSignal, For } from 'solid-js';
+import { createSignal } from 'solid-js';
+import PayeeSelectField from './PayeeSelectField';
+import AmountInputField from './AmountInputField';
+import ReferenceInputField from './ReferenceInputField';
 
 function PayPayeeFormContent(props) {
   const [payeeId, setPayeeId] = createSignal('');
@@ -22,45 +25,19 @@ function PayPayeeFormContent(props) {
 
   return (
     <form onSubmit={handleSubmit}>
-      <div class="mb-4">
-        <label class="block text-white mb-2">Select Payee</label>
-        <select
-          class="w-full p-3 border border-white/30 rounded-full focus:outline-none focus:border-white focus:ring-2 focus:ring-white text-white bg-white/10 dark:bg-gray-700 appearance-none box-border"
-          value={payeeId()}
-          onInput={(e) => setPayeeId(e.target.value)}
-          required
-        >
-          <option value="" disabled>Select a payee</option>
-          <For each={props.payees()}>
-            {(payee) => (
-              <option value={payee.id}>
-                {payee.name} - {payee.accountNumber} ({payee.sortCode})
-              </option>
-            )}
-          </For>
-        </select>
-      </div>
-      <div class="mb-4">
-        <label class="block text-white mb-2">Amount</label>
-        <input
-          type="number"
-          step="0.01"
-          class="w-full p-3 border border-white/30 rounded-full focus:outline-none focus:border-white focus:ring-2 focus:ring-white text-white bg-white/10 dark:bg-gray-700 box-border"
-          value={amount()}
-          onInput={(e) => setAmount(e.target.value)}
-          required
-        />
-      </div>
-      <div class="mb-6">
-        <label class="block text-white mb-2">Reference</label>
-        <input
-          type="text"
-          class="w-full p-3 border border-white/30 rounded-full focus:outline-none focus:border-white focus:ring-2 focus:ring-white text-white bg-white/10 dark:bg-gray-700 box-border"
-          value={reference()}
-          onInput={(e) => setReference(e.target.value)}
-          required
-        />
-      </div>
+      <PayeeSelectField
+        payeeId={payeeId}
+        setPayeeId={setPayeeId}
+        payees={props.payees}
+      />
+      <AmountInputField
+        amount={amount}
+        setAmount={setAmount}
+      />
+      <ReferenceInputField
+        reference={reference}
+        setReference={setReference}
+      />
       <div class="flex justify-end space-x-4">
         <button
           type="button"
