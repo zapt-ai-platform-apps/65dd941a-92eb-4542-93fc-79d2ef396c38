@@ -3,6 +3,7 @@ import AccountSummary from './components/AccountSummary';
 import TransactionList from './components/TransactionList';
 import AddPayeeForm from './components/AddPayeeForm';
 import PayPayeeForm from './components/PayPayeeForm';
+import CardDetails from './components/CardDetails';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <div class="max-w-4xl mx-auto h-full">
         <h1 class="text-4xl font-bold mb-6 text-white text-center">Banking App</h1>
         <AccountSummary account={account} />
+        <CardDetails account={account} />
         <div class="flex flex-col sm:flex-row sm:justify-center space-y-4 sm:space-y-0 sm:space-x-4 my-6">
           <button
             class="bg-white/30 text-white py-2 px-6 rounded-full cursor-pointer hover:bg-white/50 transition duration-300 ease-in-out transform hover:scale-105"

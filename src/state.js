@@ -5,6 +5,11 @@ export const [account, setAccount] = createSignal({
   sortCode: '12-34-56',
   balance: 1250.75,
   currency: 'GBP',
+  cardDetails: {
+    cardNumber: '1234 5678 9012 3456',
+    expiryDate: '12/25',
+    cvc: '123',
+  },
 });
 
 export const [transactions, setTransactions] = createSignal([
