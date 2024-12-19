@@ -11,6 +11,7 @@ Banking App is a simulated banking application that provides users with an inter
 5. [Pay a Payee](docs/journeys/pay-payee.md) - Make a payment to an existing payee.
 6. [Responsive Design](docs/journeys/responsive-design.md) - Experience the app across devices.
 7. [User-Friendly Interface](docs/journeys/user-friendly-interface.md) - Navigate the app with ease.
+8. [Manage Savings Pot](docs/journeys/manage-savings-pot.md) - Deposit to and withdraw from your savings pot.
 
 ## Note
 
