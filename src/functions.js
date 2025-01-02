@@ -1,10 +1,3 @@
-import {
-  setAccount,
-  setSavingsPot,
-  setTransactions,
-  setPayees,
-} from './state';
-
 export const handleAddPayee = (newPayee, payees, setPayees) => {
   setPayees([...payees, { ...newPayee, id: payees.length + 1 }]);
 };
