@@ -3,19 +3,18 @@ export default {
     "./index.html",
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
-  darkMode: 'class',
   theme: {
     extend: {
       fontFamily: {
         'sans': ['Poppins', 'sans-serif'],
       },
       colors: {
-        primary: '#60A5FA', // Light Blue-400
-        secondary: '#A78BFA', // Light Purple-400
-        accent: '#C084FC', // Purple-300
+        primary: '#93C5FD', // Light Blue-300
+        secondary: '#C4B5FD', // Light Purple-300
+        accent: '#F9A8D4', // Pink-300
       },
       backgroundImage: {
-        'gradient-glass': 'linear-gradient(135deg, rgba(255,255,255,0.25) 0%, rgba(255,255,255,0.15) 100%)',
+        'gradient-glass': 'linear-gradient(135deg, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0.1) 100%)',
       },
       backdropBlur: {
         xs: '2px',

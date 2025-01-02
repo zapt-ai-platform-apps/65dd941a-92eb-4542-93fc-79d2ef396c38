@@ -36,8 +36,8 @@ function SavingsPot() {
   };
 
   return (
-    <div className="bg-white/20 dark:bg-gray-800 p-6 rounded-3xl shadow-xl backdrop-blur-md mt-6">
-      <h2 className="text-2xl font-semibold mb-4 text-white">Savings Pot</h2>
+    <div className="bg-white p-6 rounded-3xl shadow mt-6">
+      <h2 className="text-2xl font-semibold mb-4 text-gray-800">Savings Pot</h2>
       <BalanceDisplay savingsPot={savingsPot} />
       <TransferForm
         transferAmount={transferAmount}

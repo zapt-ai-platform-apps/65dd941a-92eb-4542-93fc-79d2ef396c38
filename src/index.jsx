@@ -19,9 +19,6 @@ Sentry.init({
   }
 });
 
-// Enable dark mode
-document.documentElement.classList.add('dark');
-
 // Add Umami Analytics
 if (!window.location.hostname.includes('vercel.app')) {
   const script = document.createElement('script');
