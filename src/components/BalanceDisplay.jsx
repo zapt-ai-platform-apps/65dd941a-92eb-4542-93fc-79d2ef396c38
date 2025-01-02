@@ -13,10 +13,10 @@ function BalanceDisplay({ savingsPot }) {
 
   return (
     <>
-      <p className="text-white mb-2">
+      <p className="text-gray-800 mb-2">
         <strong>Balance:</strong> {formattedBalance}
       </p>
-      <p className="text-white mb-4">
+      <p className="text-gray-800 mb-4">
         <strong>Goal Amount:</strong> {formattedGoal}
       </p>
     </>
