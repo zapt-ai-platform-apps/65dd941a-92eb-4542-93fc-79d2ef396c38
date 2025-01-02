@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom/client';
 import App from './App';
 import './index.css';
 
-import { inject } from '@vercel/analytics';
 import * as Sentry from "@sentry/react";
 
 // Initialize Sentry
@@ -17,9 +16,6 @@ Sentry.init({
     }
   }
 });
-
-// Inject Vercel Analytics
-inject();
 
 // Enable dark mode
 document.documentElement.classList.add('dark');
