@@ -27,6 +27,13 @@
 
 ## 2. Visual Theme Layer
 
+### Light and Friendly Color Palette
+
+- **Primary Color**: Light Blue (`#60A5FA`)
+- **Secondary Color**: Light Purple (`#A78BFA`)
+- **Accent Color**: Purple (`#C084FC`)
+- **Neutral Colors**: Soft grays for text and backgrounds.
+
 ### Glassmorphism
 
 - **Frosted glass effect**
@@ -97,8 +104,9 @@
 
 #### Color System
 
-- **Primary Gradient**: Vibrant blue to purple gradient.
-- **Secondary Colors**: Soft blues and purples.
+- **Primary Color**: `#60A5FA` (Light Blue-400)
+- **Secondary Color**: `#A78BFA` (Light Purple-400)
+- **Accent Color**: `#C084FC` (Purple-300)
 - **Neutral Grays**: For text and backgrounds.
 
 #### Typography Scale
@@ -124,7 +132,7 @@
    - Emphasized sophistication and visual impact for an impressive design.
 
 2. **Theme Selection**
-   - Chose Glassmorphism for a modern and exciting aesthetic.
+   - Chose a Light and Friendly Color Palette for an inviting aesthetic.
 
 3. **Principles Application**
    - Applied blur effects and gradients to key components.
