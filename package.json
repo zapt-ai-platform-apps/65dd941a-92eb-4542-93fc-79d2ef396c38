@@ -1,22 +1,26 @@
 {
   "name": "banking-app",
   "version": "1.0.0",
-  "description": "Banking App built with SolidJS and Tailwind CSS",
+  "description": "Banking App built with ReactJS and Tailwind CSS",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview"
   },
   "dependencies": {
-    "solid-js": "^1.8.22",
-    "@solidjs/router": "^0.8.4",
-    "@vercel/analytics": "1.4.0",
-    "solid-markdown": "^2.0.13",
-    "@sentry/browser": "8.35.0"
+    "@supabase/auth-ui-react": "^0.4.7",
+    "@supabase/auth-ui-shared": "^0.1.8",
+    "@zapt/zapt-js": "^1.0.6",
+    "drizzle-orm": "^0.33.0",
+    "postgres": "^3.4.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "@sentry/react": "8.35.0",
+    "@sentry/node": "8.35.0"
   },
   "devDependencies": {
+    "@vitejs/plugin-react": "^3.0.0",
     "vite": "^5.4.7",
-    "vite-plugin-solid": "^2.10.2",
     "tailwindcss": "^3.4.13",
     "postcss": "^8.4.47",
     "autoprefixer": "^10.4.20"

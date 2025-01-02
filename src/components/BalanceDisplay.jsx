@@ -1,21 +1,23 @@
-function BalanceDisplay(props) {
-  const savingsPot = props.savingsPot;
+import React from 'react';
+
+function BalanceDisplay({ savingsPot }) {
+  const formattedBalance = new Intl.NumberFormat('en-GB', {
+    style: 'currency',
+    currency: savingsPot.currency,
+  }).format(savingsPot.balance);
+
+  const formattedGoal = new Intl.NumberFormat('en-GB', {
+    style: 'currency',
+    currency: savingsPot.currency,
+  }).format(savingsPot.goalAmount);
 
   return (
     <>
-      <p class="text-white mb-2">
-        <strong>Balance:</strong>{' '}
-        {new Intl.NumberFormat('en-GB', {
-          style: 'currency',
-          currency: savingsPot().currency,
-        }).format(savingsPot().balance)}
+      <p className="text-white mb-2">
+        <strong>Balance:</strong> {formattedBalance}
       </p>
-      <p class="text-white mb-4">
-        <strong>Goal Amount:</strong>{' '}
-        {new Intl.NumberFormat('en-GB', {
-          style: 'currency',
-          currency: savingsPot().currency,
-        }).format(savingsPot().goalAmount)}
+      <p className="text-white mb-4">
+        <strong>Goal Amount:</strong> {formattedGoal}
       </p>
     </>
   );

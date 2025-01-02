@@ -1,22 +1,4 @@
-# Banking App
-
-Banking App is a simulated banking application that provides users with an interactive interface to manage their bank account. With an impressive and modern design inspired by Glassmorphism, the app offers a visually engaging user experience while maintaining simplicity and efficiency.
-
-## User Journeys
-
-1. [View Account Summary](docs/journeys.md#view-account-summary) - Check your account details and balance.
-2. [View Card Details](docs/journeys.md#view-card-details) - Securely view your card number, expiry date, and CVC when needed.
-3. [View Recent Transactions](docs/journeys.md#view-recent-transactions) - Browse your recent transactions.
-4. [Add a Payee](docs/journeys.md#add-a-payee) - Add a new payee to your account.
-5. [Pay a Payee](docs/journeys.md#pay-a-payee) - Make a payment to an existing payee.
-6. [Responsive Design](docs/journeys.md#responsive-design) - Experience the app across devices.
-7. [User-Friendly Interface](docs/journeys.md#user-friendly-interface) - Navigate the app with ease.
-8. [Manage Savings Pot](docs/journeys.md#manage-savings-pot) - Deposit to and withdraw from your savings pot.
-
-## Note
-
-- This app is a template and does not connect to real banking systems.
-- All data is simulated for demonstration purposes only.
+# Technical Details
 
 ## External Libraries and APIs
 

@@ -1,9 +1,10 @@
-import { render } from 'solid-js/web';
+import React from 'react';
+import ReactDOM from 'react-dom/client';
 import App from './App';
 import './index.css';
 
 import { inject } from '@vercel/analytics';
-import * as Sentry from "@sentry/browser";
+import * as Sentry from "@sentry/react";
 
 // Initialize Sentry
 Sentry.init({
@@ -40,9 +41,10 @@ window.progressierAppRuntimeSettings = {
   shortName: "Banking App"
 };
 
-let script = document.createElement('script');
-script.setAttribute('src', 'https://progressier.app/z8yY3IKmfpDIw3mSncPh/script.js');
-script.setAttribute('defer', 'true');
-document.querySelector('head').appendChild(script);
+let pwaScript = document.createElement('script');
+pwaScript.setAttribute('src', 'https://progressier.app/z8yY3IKmfpDIw3mSncPh/script.js');
+pwaScript.setAttribute('defer', 'true');
+document.querySelector('head').appendChild(pwaScript);
 
-render(() => <App />, document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<App />);
